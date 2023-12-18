@@ -1,0 +1,24 @@
+.scroll {
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  background: rebeccapurple;
+  color: rgb(239, 239, 68);
+}
+.scroll p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  text-align: center;
+  transform: translateX(100%);
+  animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
