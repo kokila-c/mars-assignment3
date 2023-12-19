@@ -29,7 +29,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   background-image: url(images/space.webp);
   background-position: center;
   background-size: cover;
@@ -45,7 +45,7 @@ a {
   font-size: 1rem;
 }
 a:hover {
-  color: orangered;
+  color: #f08080;
 }
 
 /* header */
@@ -62,11 +62,11 @@ header {
   margin: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .logo a {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -78,9 +78,9 @@ header {
 
 .links {
   display: flex;
-  width: 500px;
-  min-width: 500px;
-  gap: 8rem;
+  width: 600px;
+  min-width: 600px;
+  gap: 160px;
 }
 
 .mars {
@@ -102,6 +102,8 @@ header {
   transition: transform 20ms linear;
   transform-style: preserve-3d;
   box-shadow: inset 0px 0px 20px rgb(0, 0, 0, 1);
+
+  z-index: -1;
   /* color: #000; */
 }
 
@@ -128,9 +130,104 @@ header {
 
   color: #ffffff;
 
-  display: flex;
-
-  font-size: 25px;
+  /* display: flex; */
+  /* letter-spacing: 1px;  */
+  font-size: 20px;
   padding: 150px 90px 10px 90px;
   margin: 80px;
+}
+
+/* css for container of page2 */
+.container-page2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* CSS FOR TABLE */
+td,
+th {
+  border-bottom: 1px solid black;
+  background-color: #58111a;
+  font-size: 14px;
+  height: 30px;
+  color: #f08080;
+  padding: 12px 10px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  margin: 200px;
+  text-align: left;
+  box-shadow: 3px 6px 5px #58111a;
+  width: 200px;
+  min-width: 200px;
+  height: 150px;
+}
+th {
+  border-radius: 20px 20px 0 0;
+  background-color: #cc3333;
+  color: #ffffff;
+}
+
+/* css for container of circles */
+.container-circles {
+  height: 600px;
+  width: 600px;
+  min-width: 600px;
+  margin-top: 200px;
+  /* border: 1px solid rgb(166, 153, 153); */
+  border-radius: 300px;
+  position: relative;
+}
+.c1 {
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+  border: 2px solid #89cff0;
+  border-radius: 100px;
+
+  background-color: #003153;
+  text-align: center;
+}
+
+.c2 {
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+  border: 2px solid #f4c431;
+  border-radius: 100px;
+
+  margin-top: 60px;
+  margin-left: -50px;
+
+  background-color: #6b4423;
+  text-align: center;
+}
+
+.c3 {
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+  border: 2px solid #ff7f7f;
+  border-radius: 100px;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: -200px;
+
+  background-color: #592720;
+  text-align: center;
+}
+
+.c4 {
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+  border: 2px solid #fe6f5e;
+  border-radius: 100px;
+
+  position: absolute;
+  margin-left: 300px;
+  margin-top: -480px;
+
+  text-align: center;
 }
