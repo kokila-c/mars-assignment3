@@ -3,38 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-.scroll {
-  height: 20px;
-  overflow: hidden;
-  position: relative;
-  background: rebeccapurple;
-  color: rgb(239, 239, 68);
-}
-.scroll p {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0%;
-  text-align: center;
-  transform: translateX(100%);
-  animation: scroll 15s linear infinite;
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 /* body {
   display: flex;
   justify-content: right;
   align-items: right;
 } */
 body {
-  height: 100vh;
-  background-image: url(images/space.webp);
+  height: 100%;
+  background-image: url(images/back1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,7 +25,7 @@ a {
   font-size: 1rem;
 }
 a:hover {
-  color: orangered;
+  color: #f08080;
 }
 
 /* header */
@@ -66,11 +42,11 @@ header {
   margin: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .logo a {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -82,18 +58,18 @@ header {
 
 .links {
   display: flex;
-  width: 500px;
-  min-width: 500px;
-  gap: 8rem;
+  width: 600px;
+  min-width: 600px;
+  gap: 160px;
 }
 
 .mars {
   /* position: absolute; */
   width: 300px;
   min-width: 300px;
-
   height: 300px;
   /* margin-left: 850px; */
+
   margin-top: 150px;
 
   background: #4f1313
@@ -106,6 +82,8 @@ header {
   transition: transform 20ms linear;
   transform-style: preserve-3d;
   box-shadow: inset 0px 0px 20px rgb(0, 0, 0, 1);
+
+  z-index: -1;
   /* color: #000; */
 }
 
@@ -132,9 +110,225 @@ header {
 
   color: #ffffff;
 
-  display: flex;
-
-  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* display: flex; */
+  /* letter-spacing: 1px;  */
+  font-size: 23px;
   padding: 150px 90px 10px 90px;
   margin: 80px;
+}
+
+/* css for container of page2 */
+.container-page2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* CSS FOR TABLE */
+.Td,
+#Th {
+  border-bottom: 1px solid black;
+  background-color: #58111a;
+  font-size: 14px;
+  height: 30px;
+  color: #f08080;
+  padding: 12px 10px;
+}
+#Tb {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  margin: 200px;
+  text-align: left;
+  box-shadow: 3px 6px 5px #58111a;
+  width: 200px;
+  min-width: 200px;
+  height: 150px;
+}
+#Th {
+  border-radius: 20px 20px 0 0;
+  background-color: #cc3333;
+  color: #ffffff;
+}
+
+/* css for container of circles */
+.container-circles {
+  height: 600px;
+  width: 600px;
+  min-width: 600px;
+  margin-top: 200px;
+  /* border: 1px solid rgb(166, 153, 153); */
+  border-radius: 300px;
+  position: relative;
+}
+.c1 {
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+
+  border: 2px solid #89cff0;
+  border-radius: 100px;
+  background-color: #003153;
+  text-align: center;
+
+  color: #89cff0;
+  font-size: 15px;
+}
+#tb1,
+.tr1 {
+  text-align: center;
+  color: #a6cadb;
+  padding-top: 8px;
+  margin-left: 25px;
+  margin-right: 16px;
+  margin-top: 10px;
+}
+
+#r1 {
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+#r2 {
+  font-size: 28px;
+  color: white;
+}
+#r3 {
+  font-size: 12px;
+}
+#r4 {
+  padding-top: 15px;
+  font-size: 10px;
+}
+s
+
+
+/* to enlarge the circle when mouse on it */
+.c1:hover,
+.c2:hover,
+.c3:hover,
+.c4:hover {
+  transform: scale(1.5);
+}
+
+.c2 {
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+
+  border: 2px solid #f4c431;
+  border-radius: 100px;
+
+  margin-top: 60px;
+  margin-left: -50px;
+
+  background-color: #6b4423;
+  text-align: center;
+
+  color: #f4c431;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#tb2,
+.tr2 {
+  text-align: center;
+  color: #a6cadb;
+  padding-top: 4px;
+
+  margin-left: 35px;
+  margin-right: 16px;
+  margin-top: 10px;
+
+  font-size: 15px;
+
+  color: #eddca7;
+}
+#rr2 {
+  font-size: 12px;
+  padding-top: 15px;
+}
+.rr4 {
+  font-size: 25px;
+}
+#farge1 {
+  color: white;
+}
+#farge2 {
+  color: #a6cadb;
+}
+#rr5 {
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+.c3 {
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+  border: 2px solid #ff7f7f;
+  border-radius: 100px;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: -200px;
+
+  background-color: #592720;
+  text-align: center;
+
+  color: #ffffff;
+}
+#c3 {
+  margin-top: 50px;
+  padding-top: 10px;
+  color: #f69a9a;
+}
+p {
+  align-items: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.c4 {
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+  border: 2px solid #fe6f5e;
+  border-radius: 100px;
+
+  position: absolute;
+  margin-left: 300px;
+  margin-top: -480px;
+
+  text-align: center;
+  background-image: url(images/dagonMars.jpg);
+}
+
+.scroll {
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  background: rebeccapurple;
+  color: rgb(239, 239, 68);
+}
+.scroll p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  text-align: center;
+  transform: translateX(100%);
+  animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll {
+  position: sticky;
 }
