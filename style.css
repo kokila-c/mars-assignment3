@@ -3,34 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-.scroll {
-  height: 20px;
-  overflow: hidden;
-  position: relative;
-  background: rebeccapurple;
-  color: rgb(239, 239, 68);
-}
-.scroll p {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0%;
-  text-align: center;
-  transform: translateX(100%);
-  animation: scroll 15s linear infinite;
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
 body {
   height: 100%;
-  background-image: url(images/space.webp);
+  background-image: url(images/back1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,7 +42,7 @@ header {
 }
 
 .logo a {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -87,9 +63,9 @@ header {
   /* position: absolute; */
   width: 300px;
   min-width: 300px;
-
   height: 300px;
   /* margin-left: 850px; */
+
   margin-top: 150px;
 
   background: #4f1313
@@ -130,9 +106,11 @@ header {
 
   color: #ffffff;
 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* display: flex; */
   /* letter-spacing: 1px;  */
-  font-size: 20px;
+  font-size: 23px;
   padding: 150px 90px 10px 90px;
   margin: 80px;
 }
@@ -144,8 +122,8 @@ header {
 }
 
 /* CSS FOR TABLE */
-td,
-th {
+.Td,
+#Th {
   border-bottom: 1px solid black;
   background-color: #58111a;
   font-size: 14px;
@@ -153,7 +131,7 @@ th {
   color: #f08080;
   padding: 12px 10px;
 }
-table {
+#Tb {
   border-collapse: collapse;
   border-spacing: 0px;
   margin: 200px;
@@ -163,7 +141,7 @@ table {
   min-width: 200px;
   height: 150px;
 }
-th {
+#Th {
   border-radius: 20px 20px 0 0;
   background-color: #cc3333;
   color: #ffffff;
@@ -183,17 +161,57 @@ th {
   height: 200px;
   width: 200px;
   min-width: 200px;
+
   border: 2px solid #89cff0;
   border-radius: 100px;
-
   background-color: #003153;
   text-align: center;
+
+  color: #89cff0;
+  font-size: 15px;
+}
+#tb1,
+.tr1 {
+  text-align: center;
+  color: #a6cadb;
+  padding-top: 8px;
+  margin-left: 25px;
+  margin-right: 16px;
+  margin-top: 10px;
+}
+
+#r1 {
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+#r2 {
+  font-size: 28px;
+  color: white;
+}
+#r3 {
+  font-size: 12px;
+}
+#r4 {
+  padding-top: 15px;
+  font-size: 10px;
+}
+s
+
+
+/* to enlarge the circle when mouse on it */
+.c1:hover,
+.c2:hover,
+.c3:hover,
+.c4:hover {
+  transform: scale(1.5);
 }
 
 .c2 {
   height: 200px;
   width: 200px;
   min-width: 200px;
+
   border: 2px solid #f4c431;
   border-radius: 100px;
 
@@ -202,6 +220,42 @@ th {
 
   background-color: #6b4423;
   text-align: center;
+
+  color: #f4c431;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#tb2,
+.tr2 {
+  text-align: center;
+  color: #a6cadb;
+  padding-top: 4px;
+
+  margin-left: 35px;
+  margin-right: 16px;
+  margin-top: 10px;
+
+  font-size: 15px;
+
+  color: #eddca7;
+}
+#rr2 {
+  font-size: 12px;
+  padding-top: 15px;
+}
+.rr4 {
+  font-size: 25px;
+}
+#farge1 {
+  color: white;
+}
+#farge2 {
+  color: #a6cadb;
+}
+#rr5 {
+  font-size: 12px;
+  padding-top: 15px;
 }
 
 .c3 {
@@ -216,6 +270,19 @@ th {
 
   background-color: #592720;
   text-align: center;
+
+  color: #ffffff;
+}
+#c3 {
+  margin-top: 50px;
+  padding-top: 10px;
+  color: #f69a9a;
+}
+p {
+  align-items: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 .c4 {
@@ -230,4 +297,34 @@ th {
   margin-top: -480px;
 
   text-align: center;
+  background-image: url(images/dagonMars.jpg);
+}
+
+.scroll {
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  background: rebeccapurple;
+  color: rgb(239, 239, 68);
+}
+.scroll p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  text-align: center;
+  transform: translateX(100%);
+  animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll {
+  position: sticky;
 }
