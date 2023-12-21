@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/bg-5.jpg);
+}
+
+.grid {
+  display: grid;
+  /* align-items: center;
+  justify-content: center;
+  align-content: center; */
+  margin: auto; /*because i want the grind in center if page*/
+  margin-top: 100px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px; /* space between cells */
+  width: 1500px; /* size of grid*/
+  color: silver;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  /* align-items: center;
+  justify-content: center; */
+  /* align-content: center; */
+}
+
+.grid-item audio,
+.grid-item video {
+  /* align-items: center;
+  justify-content: center; */
+  /* align-content: center; */
+  width: 100%;
+}
+.grid-item audio {
+  margin-top: 120px;
+}
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
