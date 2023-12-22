@@ -6,29 +6,34 @@
 /* body {
   background-image: url(images/bg-5.jpg);
 } */
-
+#gallery {
+  width: 100vw;
+  height: 100vh;
+}
 .grid {
+  padding: 10px;
   display: grid;
   /* align-items: center; */
-  /* justify-content: center; */
+  justify-content: center;
   /* align-content: center; */
-  margin: auto; /*because i want the grind in center if page */
+  margin: 0 auto; /*because i want the grind in center if page */
   margin-top: 250px;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr); /*3 columns*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3, 1fr));
   gap: 10px; /* space between cells */
-  max-width: 1500px; /* size of grid*/
-  max-height: 750px;
+  max-width: 700px; /*size of grid*/
+  max-height: 400px;
   color: silver;
 }
 
 .grid-item {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 10px;
   text-align: center;
   /* align-items: center;
   justify-content: center; */
   /* align-content: center; */
-  width: 500px;
+  width: 100%;
 }
 /* .grid-item h3 {
   position: absolute;
@@ -50,4 +55,10 @@
 }
 h4 {
   font-size: larger;
+}
+@media only screen and (max-width: 1500px) {
+  .grid {
+    max-width: 1200px; /*size of grid*/
+    max-height: 900px;
+  }
 }

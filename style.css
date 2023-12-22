@@ -22,7 +22,7 @@ a {
   text-decoration: none;
   color: #ffffff;
 
-  font-size: 1rem;
+  font-size: 22px;
 }
 a:hover {
   color: #f08080;
@@ -46,7 +46,7 @@ header {
 }
 
 .logo a {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -99,6 +99,8 @@ header {
 .container {
   display: flex;
   justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* css for h2 */
@@ -124,6 +126,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   margin-top: 200px;
+  z-index: -1;
 }
 
 /* CSS FOR TABLE */
@@ -305,8 +308,10 @@ p {
   text-align: center;
   background-image: url(images/dagonMars.jpg);
 }
-
-.scroll {
+#space-2 {
+  height: 100vh;
+}
+/* .scroll {
   height: 20px;
   overflow: hidden;
   position: relative;
@@ -329,7 +334,7 @@ p {
   100% {
     transform: translateX(-100%);
   }
-}
+} */
 
 .scroll {
   position: sticky;

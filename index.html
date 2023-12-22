@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="page3.css" />
     <link rel="stylesheet" href="page4.css" />
-    <link rel="fav-icon" href="images/mars fav-icon.png" />
+    <link rel="icon" href="images/mars fav-icon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -21,9 +21,9 @@
       <div class="navbar">
         <div class="logo"><a href="#">MARS</a></div>
         <ul class="links">
-          <li><a href="#tb1">Facts</a></li>
+          <li><a href="#space-2">Facts</a></li>
           <li><a href="#astro">Mars Mission</a></li>
-          <li><a href="#gallary">Gallery</a></li>
+          <li><a href="#gallery">Gallery</a></li>
         </ul>
       </div>
     </header>
@@ -35,75 +35,76 @@
       </div>
       <div class="mars"></div>
     </div>
+    <div id="space-2">
+      <div class="container-page2">
+        <table id="Tb">
+          <tr>
+            <th id="Th">DASHBOARD</th>
+          </tr>
+          <tr>
+            <td class="Td">WEATHER</td>
+          </tr>
+          <tr>
+            <td class="Td">DISTANCE</td>
+          </tr>
+          <tr>
+            <td class="Td">MARS MOONS</td>
+          </tr>
+          <tr>
+            <td class="Td">DAY ON MARS</td>
+          </tr>
+        </table>
 
-    <div class="container-page2">
-      <table id="Tb">
-        <tr>
-          <th id="Th">DASHBOARD</th>
-        </tr>
-        <tr>
-          <td class="Td">WEATHER</td>
-        </tr>
-        <tr>
-          <td class="Td">DISTANCE</td>
-        </tr>
-        <tr>
-          <td class="Td">MARS MOONS</td>
-        </tr>
-        <tr>
-          <td class="Td">DAY ON MARS</td>
-        </tr>
-      </table>
+        <div class="container-circles">
+          <div class="c1">
+            <table id="tb1">
+              <th class="tr1" colspan="2">DATA</th>
+              <tr>
+                <td class="tr1" id="r1" colspan="2">TODAY'S WEATHER (F°)</td>
+              </tr>
+              <tr>
+                <td class="tr1" id="r2">-4°</td>
+                <td class="tr1" id="r2">-98°</td>
+              </tr>
+              <tr>
+                <td id="r3">high</td>
+                <td class="r3">low</td>
+              </tr>
+              <tr>
+                <td id="r4" colspan="2">Sol 3039 - MSL</td>
+              </tr>
+            </table>
+          </div>
 
-      <div class="container-circles">
-        <div class="c1">
-          <table id="tb1">
-            <th class="tr1" colspan="2">DATA</th>
-            <tr>
-              <td class="tr1" id="r1" colspan="2">TODAY'S WEATHER (F°)</td>
-            </tr>
-            <tr>
-              <td class="tr1" id="r2">-4°</td>
-              <td class="tr1" id="r2">-98°</td>
-            </tr>
-            <tr>
-              <td id="r3">high</td>
-              <td class="r3">low</td>
-            </tr>
-            <tr>
-              <td id="r4" colspan="2">Sol 3039 - MSL</td>
-            </tr>
-          </table>
+          <div class="c2">
+            <table id="tb2">
+              <tr>
+                <th class="tr2" colspan="2">COMPARE</th>
+              </tr>
+              <tr>
+                <td class="tr2" id="rr2" colspan="2">DISTANCE FROM SUN</td>
+              </tr>
+              <tr>
+                <td class="tr2">MARS</td>
+                <td class="tr1">EARTH</td>
+              </tr>
+              <tr>
+                <td class="rr4" id="farge1">142</td>
+                <td class="rr4" id="farge2">93</td>
+              </tr>
+              <tr>
+                <td class="tr2" id="rr5" colspan="2">millions of miles avg</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="c3">
+            <div id="c3"><label>PHOBOS AND DEIMOS</label></div>
+            <p>Mars has two tiny moons, Both were discovered in 1877</p>
+          </div>
+
+          <div class="c4"></div>
         </div>
-
-        <div class="c2">
-          <table id="tb2">
-            <tr>
-              <th class="tr2" colspan="2">COMPARE</th>
-            </tr>
-            <tr>
-              <td class="tr2" id="rr2" colspan="2">DISTANCE FROM SUN</td>
-            </tr>
-            <tr>
-              <td class="tr2">MARS</td>
-              <td class="tr1">EARTH</td>
-            </tr>
-            <tr>
-              <td class="rr4" id="farge1">142</td>
-              <td class="rr4" id="farge2">93</td>
-            </tr>
-            <tr>
-              <td class="tr2" id="rr5" colspan="2">millions of miles avg</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="c3">
-          <div id="c3"><label>PHOBOS AND DEIMOS</label></div>
-          <p>Mars has two tiny moons, Both were discovered in 1877</p>
-        </div>
-
-        <div class="c4"></div>
       </div>
     </div>
     <div class="mars-mission">
@@ -128,7 +129,7 @@
       <!-- <div class="bg-change">
       <img src="images/bg-3.jpg" alt="space" />-->
     </div>
-    <div class="grid" id="gallary">
+    <div class="grid" id="gallery">
       <div class="grid-item">
         <h4>How does ocean wave sound on Mars?</h4>
         <audio controls>
@@ -138,7 +139,7 @@
 
       <div class="grid-item">
         <h4>Is Mars really red?</h4>
-        <video controls>
+        <video controls autoplay muted>
           <source src="media files/Is Mars Really Red.mp4" />
         </video>
         <!-- <p>Explore the red planet.</p> -->
@@ -174,12 +175,12 @@
       </div>
     </div>
 
-    <footer>
-      <div class="scroll">
-        <pre>
-          Breaking news : Joe buys his 3rd apartment in Mars and will take us for a tour soon..........
-        </pre>
-      </div>
-    </footer>
+    <div class="scroll">
+      <pre>
+          Breaking news : Joe buys his house in Mars and will take us for a tour soon..........
+        </pre
+      >
+    </div>
+    <footer></footer>
   </body>
 </html>

@@ -14,12 +14,16 @@
   align-content: center;
   text-align: center;
 } */
+/* body.mars-mission.navbar{
+
+} */
 .mars-mission {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
+  width: 100vw;
   display: flex;
   /* justify-content: space-between; */
   animation: bg 10s infinite;
@@ -68,29 +72,36 @@ h3 {
   color: silver;
   text-align: center;
   width: 800px;
-  font-size: 30px;
+  font-size: 25px;
   padding-left: 100px;
 }
 .rocket {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   position: relative;
   transform: translateY(75%);
   animation: animate 10s ease infinite;
+
   /* border: 5px red solid; */
 }
 @keyframes animate {
   /* -100% {
     transform: translateY(-4px);
   } */
-  50% {
-    transform: translateY(40px);
+  /* 50% {
+    transform: translateY(-40px);
+  } */
+  0% {
+    bottom: 2vh;
   }
   100% {
     /* background-image: url(images/bg-2.jpg); */
-    transform: translateY(100px);
+    /* transform: translateY(10px); */
+    bottom: 80vh;
   }
 }
 .scroll {
@@ -103,7 +114,7 @@ h3 {
   color: rgb(231, 127, 86);
 }
 .scroll pre {
-  /* position: absolute; */
+  position: absolute;
   width: 100%;
   height: 100%;
   margin: 0%;
