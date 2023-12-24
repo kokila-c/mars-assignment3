@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* body {
    background-image: url(images/bg-3.jpg);
   background-repeat: no-repeat;
